@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">JM Calendar</string>
+    <string name="change_date">Click here to change date to 1</string>
+    <string name="islamic_date_heading">Islamic Date:</string>
+    <string name="islamic_month_heading">Islamic Month:</string>
+    <string name="islamic_year_heading">Islamic Year:</string>
+    <string name="solar_date_heading">Solar Date</string>
+    <string name="Refresh">Refresh Date</string>
+    <string name="Reset">Reset Date</string>
+    <string name="Reset_last_updated_hour">Updated Hour</string>
+    <string name="Reset_last_updated_minutes">Updated minutes</string>
+    <string name="update_date_and_time">Update Date and Time</string>
+</resources>

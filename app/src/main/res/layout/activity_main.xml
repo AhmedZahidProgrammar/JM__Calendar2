@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/moon_image">
+
+    <TextView
+        android:id="@+id/Islamic_date_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Islamic Date"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#C4FFFFFF"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3C3C3C"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/Islamic_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="21 - Zilquad - 1441"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#C4FFFFFF"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:padding="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/solar_date_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solar Date"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#C4FFFFFF"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3C3C3C"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/solar_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14 - 07 - 2020"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#C4FFFFFF"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:padding="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/flagButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Date"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/btn_rounded"
+        android:onClick="showChoiceDialog"
+        android:padding="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This Will Change Date To 1"
+        android:textAllCaps="true"
+        android:textColor="#C4FFFFFF"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="20dp">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/RefreshButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:background="@drawable/btn_rounded"
+            android:onClick="onClickRefresfButton"
+            android:text="Refresh Date"
+            android:padding="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/ResetButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:background="@drawable/btn_rounded"
+            android:onClick="onClickResetButton"
+            android:text="Reset Date"
+            android:padding="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
